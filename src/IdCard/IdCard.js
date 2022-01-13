@@ -1,6 +1,6 @@
 import React from "react";
 
-const IdCard = function IdCard(props){
+const IdCard = function CarIdd(props){
     return (
       <div>
           <ul>
@@ -8,7 +8,7 @@ const IdCard = function IdCard(props){
               <li>firstName={props.firstName}</li>
               <li>gender={props.gender}</li>
               <li>height={props.height}</li>
-              <li>birth={props.birth}</li>
+              <li>birth={props.birth.toISOString()}</li>
               <li> <img src={props.picture}/></li>
           </ul>
       </div>
